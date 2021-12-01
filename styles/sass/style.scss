@@ -1,0 +1,13 @@
+@import 'setup';
+@import 'header';
+@import 'footer';
+
+body {
+    background-color: hotpink;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 85%;
+    margin: 0 auto;
+}
