@@ -1,0 +1,86 @@
+$pine: rgb(52, 82, 49);
+$accent: rgb(228, 164, 54);
+$green-gray: rgb(112, 155, 107);
+$black: rgb(31, 31, 31);
+$white-shade: rgb(246,246,246);
+$header1: 'Abril Fatface','cursive';
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-family: $header1;
+    font-size: 7.5rem;
+    color: $white-shade;
+    position: relative;
+    letter-spacing: 1px;
+    &::before {
+        content:'';
+        display: block;
+        width: 90%;
+        height: 90%;
+        background-image: url(./assets/circle-text.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        left: -60px;
+        top: -5px;
+        // background-position: center;
+    }
+}
+
+// h1::before {
+//     content: url(./assets/circle-text.png);
+// }
+
+
+
+nav {
+    height: 10vh;
+    background-color: $pine;
+}
+
+.header-banner {
+    height: 40vh;
+    background-image: url(./assets/contact-image-1.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+.landing {
+    height: 60vh;
+    background-color: $pine;
+    // display: flex;
+        .title {
+            display:flex;
+            justify-content: end;
+            align-items: center;
+        }
+}
+
+.landing-flex-box {
+    display: flex;
+    div {
+        width: calc(100% / 2);
+    }
+}
+
+
+.title-image-card {
+    display: flex;
+    .title-image {
+        img {
+            width: 100%;
+        }
+    }
+}
