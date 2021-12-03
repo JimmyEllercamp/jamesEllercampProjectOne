@@ -3,16 +3,20 @@ $accent: rgb(228, 164, 54);
 $green-gray: rgb(112, 155, 107);
 $black: rgb(31, 31, 31);
 $white-shade: rgb(246,246,246);
-$header1: 'Abril Fatface','cursive';
+$header: 'Abril Fatface','cursive';
+$menu: 'Montserrat', 'sans-serif';
+$button-text: 'Abril Fatface', 'cursive';
+$body-text: 'Montserrat', 'sans-serif';
 
 h1 {
     margin: 0;
     padding: 0;
-    font-family: $header1;
-    font-size: 7.5rem;
+    font-family: $header;
+    font-size: 6.5rem;
     color: $white-shade;
     position: relative;
     letter-spacing: 1px;
+    text-transform: uppercase;
     &::before {
         content:'';
         display: block;
@@ -28,24 +32,18 @@ h1 {
     }
 }
 
-// h1::before {
-//     content: url(./assets/circle-text.png);
-// }
-
 
 
 nav {
     height: 10vh;
     background-color: $pine;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
-.header-banner {
-    height: 40vh;
-    background-image: url(./assets/contact-image-1.jpg);
-    background-position: center;
-    background-size: cover;
-    overflow: hidden;
-}
+
 
 ul {
     list-style: none;
@@ -55,23 +53,54 @@ ul {
 
 nav ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+        color: $white-shade;
+        font-size: 2rem;
+        font-family: $header;
+        text-transform: uppercase;
+        margin: 0 1.8%;
+        a {
+            text-decoration:none;
+            color: $white-shade;
+            font-family: $menu;
+            font-weight: 700;
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+    }
+}
+.accent-menu-item {
+    color: $accent;
 }
 
+    
+
+
 .landing {
-    height: 60vh;
+    height: 70vh;
+    padding-top: 5vh;
     background-color: $pine;
+    // padding-top: 5vh;
     // display: flex;
         .title {
             display:flex;
-            justify-content: end;
+            justify-content: center;
             align-items: center;
         }
 }
 
 .landing-flex-box {
     display: flex;
-    div {
-        width: calc(100% / 2);
+    justify-content: center;
+    .title {
+        width: 60%;
+        height: 55vh;
+    }
+    .title-image-card {
+        width: 35%;
+        position: relative;
     }
 }
 
@@ -81,6 +110,30 @@ nav ul {
     .title-image {
         img {
             width: 100%;
+            position: relative;
+            bottom: 15px;
+            right: 15px;
+            z-index: 10;
         }
     }
+    .title-card {
+        position: absolute;
+        top:0;
+        right:0;
+        bottom:0;
+        left: 0;
+        background-color: #fff;
+    }
+}
+
+
+// Contact Page Styles ------------------------------------------------------------------ 
+
+
+.header-banner {
+    height: 40vh;
+    background-image: url(./assets/contact-image-1.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
 }
