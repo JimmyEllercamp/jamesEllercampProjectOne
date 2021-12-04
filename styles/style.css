@@ -406,7 +406,7 @@ aside ul {
 }
 
 .home {
-  height: 50vh;
+  height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -418,22 +418,29 @@ aside ul {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  background: #f6f6f6;
 }
 .home h2 {
   font-family: "Abril Fatface", "cursive";
   font-size: 2rem;
   letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
 }
 .home p {
   width: 85%;
   margin: 0 auto;
+  padding: 2.5% 0;
   font-family: "Montserrat", "sans-serif";
   font-size: 1rem;
   line-height: 1.5;
 }
 .home button {
   font-family: "Abril Fatface", "cursive";
-  width: 100px;
+  width: 200px;
   margin: 0 auto;
-  padding: 3rem;
+  padding: 5px 0;
+  line-height: 32px;
+  letter-spacing: 1px;
+  background: #e4a436;
 }
