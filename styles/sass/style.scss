@@ -272,6 +272,33 @@ aside ul {
             font-family: $body-text;
         }
     }
+    .contact-box1,
+    .contact-box2,
+    .contact-b0x3,
+    .contact-box4 {
+        h2 {
+            span {
+                display: inline-block;
+                position: relative;
+                right: 5%;
+                div {
+                    display: flex;  
+                    justify-content: center;
+                    align-items: center;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background-color: $accent;
+                    .fas {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        p {
+            padding-left: 8.8%;
+        }
+    }
 }
 
 // FOOTER SECTION --------------------------------------------------------------------------------------------------
