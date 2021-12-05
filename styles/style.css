@@ -715,6 +715,25 @@ aside ul {
   width: 90%;
   font-family: "Montserrat", "sans-serif";
 }
+.contact .contact-box1 h2,
+.contact .contact-box2 h2,
+.contact .contact-b0x3 h2,
+.contact .contact-box4 h2 {
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+  transition: -webkit-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+}
+.contact .contact-box1 h2:hover, .contact .contact-box1 h2:focus,
+.contact .contact-box2 h2:hover,
+.contact .contact-box2 h2:focus,
+.contact .contact-b0x3 h2:hover,
+.contact .contact-b0x3 h2:focus,
+.contact .contact-box4 h2:hover,
+.contact .contact-box4 h2:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
 .contact .contact-box1 h2 span,
 .contact .contact-box2 h2 span,
 .contact .contact-b0x3 h2 span,

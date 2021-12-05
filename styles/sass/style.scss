@@ -277,6 +277,11 @@ aside ul {
     .contact-b0x3,
     .contact-box4 {
         h2 {
+            transition: transform 0.2s ease-out;
+            &:hover,
+            &:focus {
+                transform: scale(1.1);
+            }
             span {
                 display: inline-block;
                 position: relative;
