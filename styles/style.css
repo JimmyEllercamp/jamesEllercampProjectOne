@@ -239,6 +239,7 @@ button {
   border: none;
   padding: 0;
   margin: 0;
+  text-transform: uppercase;
 }
 
 h1,
@@ -331,6 +332,13 @@ nav ul li {
   font-family: "Abril Fatface", "cursive";
   text-transform: uppercase;
   margin: 0 1.8%;
+  -webkit-transition: -webkit-text-decoration 0.2s ease-in-out;
+  transition: -webkit-text-decoration 0.2s ease-in-out;
+  transition: text-decoration 0.2s ease-in-out;
+  transition: text-decoration 0.2s ease-in-out, -webkit-text-decoration 0.2s ease-in-out;
+}
+nav ul li:hover, nav ul li:focus {
+  text-decoration: underline;
 }
 nav ul li a {
   text-decoration: none;
@@ -339,6 +347,10 @@ nav ul li a {
   font-weight: 700;
   font-size: 1rem;
   text-transform: uppercase;
+}
+
+.name-sake:hover, .name-sake:focus {
+  text-decoration: none;
 }
 
 .accent-menu-item {
@@ -410,6 +422,11 @@ nav ul li a {
 
 html {
   font-size: 125%;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 1rem;
 }
 
 .wrapper {
@@ -513,9 +530,9 @@ aside ul {
 }
 .top-layer .text-box1 button,
 .top-layer .text-box2 button {
-  width: 150px;
+  width: 180px;
   background: #e4a436;
-  padding: 5px 8px;
+  padding: 10px 15px;
   font-family: "Abril Fatface", "cursive";
 }
 .top-layer .text-box1 h2,
@@ -603,4 +620,47 @@ aside ul {
 .image-box1 {
   right: 2%;
   bottom: 5%;
+}
+
+.blog {
+  height: 55vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.blog .blog-image-card {
+  position: relative;
+  width: 23%;
+  margin-right: 10%;
+}
+.blog .blog-image-card .blog-image {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+.blog .blog-image-card .blog-image img {
+  width: 100%;
+  position: relative;
+  right: 15px;
+  bottom: 10px;
+}
+.blog .blog-image-card .blog-card {
+  background: #709b6b;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.blog .blog-article {
+  width: 60%;
+}
+.blog .blog-article h2 {
+  font-family: "Abril Fatface", "cursive";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.8rem;
 }

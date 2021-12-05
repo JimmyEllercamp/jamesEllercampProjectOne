@@ -73,6 +73,11 @@ nav ul {
         font-family: $header;
         text-transform: uppercase;
         margin: 0 1.8%;
+        transition: text-decoration 0.2s ease-in-out;
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
         a {
             text-decoration:none;
             color: $white-shade;
@@ -83,6 +88,14 @@ nav ul {
         }
     }
 }
+
+.name-sake {
+    &:hover,
+    &:focus {
+        text-decoration:none;
+    }
+}
+
 .accent-menu-item {
     color: $accent;
 }

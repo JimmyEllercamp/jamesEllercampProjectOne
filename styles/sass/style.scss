@@ -8,7 +8,10 @@ html {
     font-size: 125%;
 }
 
-
+button {
+    padding: 10px 15px;
+    font-size: 1rem;
+}
 
 .wrapper {
     max-width: 1200px;
@@ -90,9 +93,9 @@ aside ul {
         display: flex;
         flex-direction: column;
         button {
-            width: 150px;
+            width: 180px;
             background: $accent;
-            padding: 5px 8px;
+            padding: 10px 15px;
             font-family: $button-text;
         }
         h2 {
@@ -177,3 +180,48 @@ aside ul {
     right: 2%;
     bottom: 5%;
 }
+
+
+// BLOG SECTION --------------------------------------------------------
+
+.blog {
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    .blog-image-card {
+        position: relative;
+        width: 23%;
+        margin-right: 10%;
+        .blog-image {
+            width: 100%;
+            position: relative;
+            z-index: 10;
+            img {
+                width: 100%;
+                position: relative;
+                right: 15px;
+                bottom: 10px;
+            }
+        }
+        .blog-card {
+            background: $green-gray;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    }
+    .blog-article {
+        width: 60%;
+        h2 {
+            font-family: $header;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 1.8rem;
+        }
+    }
+}
+
+// BANNER SECTION --------------------------------------------------------
+
