@@ -241,6 +241,35 @@ button {
   margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  line-height: 32px;
+}
+
+button {
+  font-family: "Abril Fatface", "cursive";
+  background: #e4a436;
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+  transition: -webkit-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  letter-spacing: 1px;
+  padding: 5px;
+}
+button:hover, button:focus {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 h1 {
   margin: 0;
   padding: 0;
@@ -443,4 +472,135 @@ aside ul {
   line-height: 32px;
   letter-spacing: 1px;
   background: #e4a436;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+.home button:hover, .home button:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.about {
+  position: relative;
+  height: 100vh;
+  background-color: white;
+}
+
+.top-layer {
+  height: 100vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  z-index: 10;
+}
+.top-layer .text-box1,
+.top-layer .text-box2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.top-layer .text-box1 button,
+.top-layer .text-box2 button {
+  width: 150px;
+  background: #e4a436;
+  padding: 5px 8px;
+  font-family: "Abril Fatface", "cursive";
+}
+.top-layer .text-box1 h2,
+.top-layer .text-box2 h2 {
+  font-family: "Abril Fatface", "cursive";
+  text-transform: uppercase;
+}
+.top-layer .text-box1 p,
+.top-layer .text-box2 p {
+  font-family: "Montserrat", "sans-serif";
+}
+.top-layer .text-box1 {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-left: 8%;
+  padding-bottom: 3%;
+}
+.top-layer .text-box2 {
+  text-align: end;
+  padding-right: 8%;
+  padding-top: 2.5%;
+}
+.top-layer .grid-box img {
+  width: 100%;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+}
+.top-layer .grid-box img:hover, .top-layer .grid-box img:focus {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.bottom-layer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: absolute;
+  top: 3%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+.bottom-layer .green-box1 {
+  background: #709b6b;
+}
+.bottom-layer .green-box2 {
+  background: #345231;
+}
+.bottom-layer .white-box1,
+.bottom-layer .white-box2 {
+  background: white;
+}
+.bottom-layer .white-box2 {
+  top: 5%;
+}
+
+.grid-box {
+  width: calc(100% / 2);
+}
+
+.green-box1,
+.image-box1 {
+  position: relative;
+  bottom: 6%;
+}
+
+.green-box2,
+.image-box2 {
+  position: relative;
+  top: 3%;
+}
+
+.image-box2 img {
+  position: relative;
+  bottom: 1.8%;
+  right: 3%;
+}
+
+.image-box1 {
+  right: 2%;
+  bottom: 5%;
 }

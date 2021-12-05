@@ -8,6 +8,18 @@ $menu: 'Montserrat', 'sans-serif';
 $button-text: 'Abril Fatface', 'cursive';
 $body-text: 'Montserrat', 'sans-serif';
 
+button {
+    font-family: $button-text;
+    background: $accent;
+    transition: transform 0.2s ease-out;
+    letter-spacing: 1px;
+    padding: 5px;
+    &:hover,
+    &:focus {
+        transform: scale(1.2);
+    }
+}
+
 h1 {
     margin: 0;
     padding: 0;
