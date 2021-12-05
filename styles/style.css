@@ -664,3 +664,35 @@ aside ul {
   letter-spacing: 1px;
   font-size: 1.8rem;
 }
+
+.banner {
+  height: 55vh;
+  background: url("./assets/home-image-5.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.insta {
+  background: white;
+}
+
+.insta-wall {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4% 0;
+}
+.insta-wall div {
+  padding: 2%;
+  width: calc(100% / 3);
+}
+.insta-wall div img {
+  width: 100%;
+}
+
+.contact {
+  background: #f6f6f6;
+}

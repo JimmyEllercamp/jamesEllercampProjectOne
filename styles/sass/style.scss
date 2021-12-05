@@ -225,3 +225,35 @@ aside ul {
 
 // BANNER SECTION --------------------------------------------------------
 
+.banner {
+    height: 55vh;
+    background: url('./assets/home-image-5.jpg');
+    background-position: center;
+    background-size: cover;
+
+}
+
+// INSTA STRIP SECTION ----------------------------------------------------------------------
+
+.insta {
+    background: white;
+}
+
+.insta-wall {
+    display: flex;
+    justify-content: center;
+    padding: 4% 0;
+    div {
+        padding: 2%;
+        width: calc(100% / 3);
+        img {
+            width: 100%;
+        }
+    }
+}
+
+// CONTACT SECTION --------------------------------------------------------------------------------------------------
+
+.contact {
+    background: $white-shade;
+}
