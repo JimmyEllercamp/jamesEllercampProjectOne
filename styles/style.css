@@ -695,4 +695,38 @@ aside ul {
 
 .contact {
   background: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 5% 0;
+}
+.contact .contact-box {
+  width: calc(100% / 2);
+  padding: 2%;
+}
+.contact .contact-box h2 {
+  font-family: "Abril Fatface", "cursive";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.contact .contact-box p {
+  width: 90%;
+  font-family: "Montserrat", "sans-serif";
+}
+
+footer {
+  height: 5vh;
+  background: #1f1f1f;
+  color: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }

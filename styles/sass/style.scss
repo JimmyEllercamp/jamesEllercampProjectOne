@@ -256,4 +256,31 @@ aside ul {
 
 .contact {
     background: $white-shade;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5% 0;
+    .contact-box {
+        width: calc(100% / 2);
+        padding: 2%;
+        h2 {
+            font-family: $header;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        p {
+            width: 90%;
+            font-family: $body-text;
+        }
+    }
+}
+
+// FOOTER SECTION --------------------------------------------------------------------------------------------------
+
+footer {
+    height: 5vh;
+    background: $black;
+    color: $white-shade;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
