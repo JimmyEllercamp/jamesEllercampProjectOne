@@ -937,6 +937,12 @@ aside {
   background-color: #f6f6f6;
 }
 
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .aside-bio {
   background-color: white;
   margin: 0 auto;
@@ -1005,4 +1011,26 @@ aside {
 }
 .aside-recent ul li::marker {
   font-size: 0.7rem;
+}
+
+article {
+  background-color: white;
+  padding: 8%;
+  border-bottom: 5px solid #709b6b;
+}
+
+.blog-page main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.article-container {
+  width: 60%;
+}
+
+.flex-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }

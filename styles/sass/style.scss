@@ -420,6 +420,10 @@ aside {
     background-color: $white-shade;
 }
 
+main {
+    display: flex;
+}
+
 .aside-bio {
     background-color: white;
     margin: 0 auto;
@@ -487,4 +491,22 @@ aside {
             }
         }
     }
+}
+
+article {
+    background-color: white;
+    padding: 8%;
+    border-bottom: 5px solid $green-gray;
+}
+
+.blog-page main {
+    display: flex;
+}
+
+.article-container {
+    width: 60%;
+}
+
+.flex-parent {
+    display: flex;
 }
