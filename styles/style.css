@@ -961,6 +961,9 @@ main {
       -ms-flex-align: center;
           align-items: center;
 }
+.aside-bio .bio-image {
+  margin-top: 5%;
+}
 .aside-bio .bio-image img {
   width: 100%;
 }
@@ -1024,7 +1027,7 @@ article {
 }
 
 .blog-page .flex-child2 {
-  width: 150%;
+  width: 160%;
 }
 
 .readerComments {
@@ -1064,4 +1067,25 @@ article {
 
 .comment2 {
   border-bottom: 5px solid #709b6b;
+}
+
+.comment-form {
+  width: 85%;
+  margin: 5% auto;
+}
+.comment-form form {
+  width: 100%;
+}
+
+.form-box {
+  width: 85%;
+  margin: 0 auto;
+}
+.form-box form {
+  width: 100%;
+}
+
+#contact h2 a {
+  text-decoration: none;
+  color: black;
 }

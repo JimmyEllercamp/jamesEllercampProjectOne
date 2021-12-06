@@ -433,6 +433,7 @@ main {
     justify-content: center;
     align-items: center;
     .bio-image {
+        margin-top: 5%;
         img {
             width: 100%;
         }
@@ -503,7 +504,7 @@ article {
 }
 
 .blog-page .flex-child2 {
-    width: 150%;
+    width: 160%;
 }
 
 .readerComments {
@@ -536,4 +537,29 @@ article {
 
 .comment2 {
     border-bottom: 5px solid $green-gray;
+}
+
+.comment-form {
+    width: 85%;
+    margin: 5% auto;
+    form {
+        width: 100%;
+    }
+}
+
+.form-box {
+    width: 85%;
+    margin: 0 auto;
+    form {
+        width: 100%; 
+    }
+}
+
+#contact {
+    h2 {
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
 }
