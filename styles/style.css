@@ -1019,18 +1019,49 @@ article {
   border-bottom: 5px solid #709b6b;
 }
 
-.blog-page main {
+.blog-page aside {
+  width: 100%;
+}
+
+.blog-page .flex-child2 {
+  width: 150%;
+}
+
+.readerComments {
+  margin-top: 5%;
+}
+
+.comment1,
+.comment2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  margin-bottom: 5%;
+  font-family: "Montserrat", "sans-serif";
+}
+.comment1 .readerPic,
+.comment2 .readerPic {
+  margin-top: 20px;
+}
+.comment1 .readerPic img,
+.comment2 .readerPic img {
+  width: 100%;
+}
+.comment1 .readerCommentBox,
+.comment2 .readerCommentBox {
+  width: 80%;
+  padding: 5%;
+}
+.comment1 .readerCommentBox p,
+.comment2 .readerCommentBox p {
+  margin: 0;
+  padding: 0;
 }
 
-.article-container {
-  width: 60%;
-}
-
-.flex-parent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.comment2 {
+  border-bottom: 5px solid #709b6b;
 }

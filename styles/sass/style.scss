@@ -436,7 +436,6 @@ main {
         img {
             width: 100%;
         }
-        // width: 90%;
     }
     .bio {
         h3 {
@@ -499,14 +498,42 @@ article {
     border-bottom: 5px solid $green-gray;
 }
 
-.blog-page main {
-    display: flex;
+.blog-page aside {
+    width: 100%;
 }
 
-.article-container {
-    width: 60%;
+.blog-page .flex-child2 {
+    width: 150%;
 }
 
-.flex-parent {
+.readerComments {
+        margin-top: 5%;
+
+}
+
+.comment1,
+.comment2 {
     display: flex;
+    justify-content: center;
+    background-color: white;
+    margin-bottom: 5%;
+    font-family: $body-text;
+    .readerPic {
+        margin-top: 20px;
+        img {
+            width: 100%;
+        }
+    }
+    .readerCommentBox {
+        width: 80%;
+        padding: 5%;
+        p {
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+.comment2 {
+    border-bottom: 5px solid $green-gray;
 }
