@@ -271,7 +271,7 @@ button:hover, button:focus {
           transform: scale(1.2);
 }
 
-h1 {
+.title h1 {
   margin: 0;
   padding: 0;
   font-family: "Abril Fatface", "cursive";
@@ -281,7 +281,7 @@ h1 {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-h1::before {
+.title h1::before {
   content: "";
   display: block;
   width: 90%;
@@ -418,6 +418,23 @@ nav ul li a {
   background-position: center;
   background-size: cover;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 10vh;
+}
+.header-banner h1 {
+  color: #f6f6f6;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 14px;
+  left: 10%;
 }
 
 html {
@@ -786,4 +803,107 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.contactPage main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contactPage main aside {
+  width: 50%;
+}
+.contactPage main aside ul li .fab {
+  font-size: 2rem;
+}
+.contactPage main form {
+  width: 55%;
+  background-color: white;
+}
+.contactPage .contactPage aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+ul.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+ul.icons li {
+  margin-right: 10%;
+}
+ul.icons li i.fab {
+  font-size: 1.5rem;
+  color: #345231;
+}
+
+.aside-box {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10%;
+  margin-right: 8%;
+}
+.aside-box h3 {
+  margin: 5% 0;
+}
+.aside-box p {
+  margin: 0;
+  padding: 0;
+}
+
+aside {
+  width: 35%;
+}
+
+.form-box {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.form-box input[tyoe=text] {
+  margin-right: 5px;
+}
+.form-box input[type=email],
+.form-box input[type=text] {
+  width: calc((100% / 2) - 5px);
+  padding: 3%;
+  border: none;
+  padding-left: 5%;
+}
+.form-box textarea {
+  resize: none;
+  width: 100%;
+  border: none;
+  margin: 3% 0;
+  padding: 5% 0 0 5%;
+}
+.form-box button {
+  width: 100%;
+  font-family: "Abril Fatface", "cursive";
+  font-weight: 600;
+}
+
+.contact-footer {
+  margin-top: 7%;
 }

@@ -316,3 +316,100 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+// CONTACT PAGE ------------------------------------------------------------------------------------
+
+.contactPage {
+    main {
+        display: flex;
+        aside {
+            width: 50%;
+            
+            ul {
+                li {
+                    .fab {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+        form {
+            width: 55%;
+            background-color: white;
+        }
+        // input[type=""]
+    } 
+
+    .contactPage {
+        aside {
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+        }
+    }
+}
+
+ul.icons {
+    display: flex;
+    li {
+        margin-right: 10%;
+        i.fab {
+            font-size: 1.5rem;
+            color: $pine;
+            
+        }
+    }
+}
+
+.aside-box {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // width: 45%;
+    padding: 10%;
+    margin-right: 8%;
+    h3 {
+        margin: 5% 0;
+    }
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+aside {
+    width: 35%;
+}
+
+.form-box {
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    input[tyoe="text"] {
+        margin-right: 5px;
+    }
+    input[type="email"],
+    input[type="text"] {
+        width: calc((100% / 2) - 5px);
+        padding: 3%;
+        border: none;
+        padding-left: 5%;
+    }
+    textarea {
+        resize: none;
+        width: 100%;
+        border: none;
+        margin: 3% 0;
+        padding: 5% 0 0 5%;
+    }
+    button {
+        width: 100%;
+        font-family: $button-text;
+        font-weight: 600;
+    }
+}
+
+.contact-footer {
+    margin-top: 7%;
+}

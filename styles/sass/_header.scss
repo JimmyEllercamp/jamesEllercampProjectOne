@@ -20,7 +20,7 @@ button {
     }
 }
 
-h1 {
+.title h1 {
     margin: 0;
     padding: 0;
     font-family: $header;
@@ -52,7 +52,6 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 
@@ -161,4 +160,17 @@ nav ul {
     background-position: center;
     background-size: cover;
     overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10vh;
+    h1 {
+        color: $white-shade;
+        font-size: 3rem;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: 14px;
+        left: 10%;
+    }
 }

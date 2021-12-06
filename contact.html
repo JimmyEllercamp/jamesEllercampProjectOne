@@ -12,36 +12,44 @@
             <ul class="nav-bar">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li>Willow</li>
+                <li class="name-sake">Willow</li>
                 <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" class="accent-menu-item">Contact</a></li>
             </ul>
         </nav>
         <section class="header-banner">
-            <h1>Contact Me</h1>
+            <h1 class="contact-header">Contact Me</h1>
         </section>
-        <main class="contactPage">
+        <main class="contactPage wrapper">
             <aside>
-                <ul>
-                    <li><i class="fab fa-facebook-f"></i></li>
-                    <li><i class="fab fa-twitter"></i></li>
-                    <li><i class="fab fa-linkedin-in"></i></li>
-                    <li><i class="fab fa-instagram"></i></li>
-                </ul>
-                <h3>info@email.com</h3>
-                <p>123 - 456 - 7890</p>
-                <p>123 Queen Street West, Unit 10</p>
-                <p>Toronto, Ontario</p>
-                <p>M5V2D5</p>
+                <div class="aside-box">
+
+                    <ul class="icons">
+                        <li><i class="fab fa-facebook-f"></i></li>
+                        <li><i class="fab fa-twitter"></i></li>
+                        <li><i class="fab fa-linkedin-in"></i></li>
+                        <li><i class="fab fa-instagram"></i></li>
+                    </ul>
+                    <h3>info@email.com</h3>
+                    <p>123 - 456 - 7890</p>
+                    <p>123 Queen Street West, Unit 10</p>
+                    <p>Toronto, Ontario</p>
+                    <p>M5V2D5</p>
+                </div>
             </aside>
-            <form action="">
-                
-                <input type="text" name="contact" id="userName" placeholder="Name">
-                <input type="email" name="contact" id="userEmail" placeholder="Email address">
-                <textarea name="contact" id="userMessage" cols="30" rows="10" placeholder="Message"></textarea>
-                <button type="submit" id="submitButton" name="contact">Submit</button>
-                
-            </form>
+            <div class="form-box">
+
+                <form action="">
+                        <input type="text" name="contact" id="userName" placeholder="Name">
+                        <input type="email" name="contact" id="userEmail" placeholder="Email address">
+                    <textarea name="contact" id="userMessage" cols="30" rows="10" placeholder="Message"></textarea>
+                    <button type="submit" id="submitButton" name="contact">Submit</button>    
+                    
+                </form>
+            </div>
         </main>
+        <footer class="contact-footer">
+            <p>Copyright &copy; 2018 HackerYou</p>
+        </footer>
 </body>
 </html>
