@@ -4,9 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+    <link rel="stylesheet" href="./styles/style.css">
     <script src="https://kit.fontawesome.com/356a2141ec.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    
+<body class="blog-page">
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="name-sake">Willow</li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact" class="accent-menu-item">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="header-banner blog-banner">
+            <h1 class="contact-header">Blog & news</h1>
+        </section>
+    </header>
+    <main class="wrapper">
+        <aside>
+            <div class="aside-bio wrapper">
+                <div class="bio-image">
+                    <img src="./styles/assets/blog-image-2.jpg" alt="Artistic and melodramatic photo of the author, Willow">
+                </div>
+                <div class="bio">
+                    <h3>About Willow</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem voluptate distinctio ad. <span><a href="#">Find out more!</a></span></p>
+                </div>
+            </div>
+            <div class="aside-recent wrapper">
+                <h3>Recent posts
+                    <ul>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem dolor amet consectetur.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum sit amet.</li>
+                    </ul>
+                </h3>
+            </div>
+        </aside>
+    </main>
+    <footer class="contact-footer">
+            <p>Copyright &copy; 2018 HackerYou</p>
+        </footer>
 </body>
 </html>

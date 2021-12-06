@@ -414,7 +414,7 @@ nav ul li a {
 
 .header-banner {
   height: 40vh;
-  background-image: url(./assets/contact-image-1.jpg);
+  background-image: url("./assets/contact-image-1.jpg");
   background-position: center;
   background-size: cover;
   overflow: hidden;
@@ -427,6 +427,31 @@ nav ul li a {
   margin-bottom: 10vh;
 }
 .header-banner h1 {
+  color: #f6f6f6;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 14px;
+  left: 10%;
+}
+
+.blog-banner {
+  height: 40vh;
+  background-image: url("./assets/blog-image-1.jpg");
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 10vh;
+}
+.blog-banner h1 {
   color: #f6f6f6;
   font-size: 3rem;
   text-transform: uppercase;
@@ -906,4 +931,78 @@ aside {
 
 .contact-footer {
   margin-top: 7%;
+}
+
+.blog-page {
+  background-color: #f6f6f6;
+}
+
+.aside-bio {
+  background-color: white;
+  margin: 0 auto;
+  padding: 8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.aside-bio .bio-image img {
+  width: 100%;
+}
+.aside-bio .bio h3 {
+  font-family: "Abril Fatface", "cursive";
+  text-transform: uppercase;
+  margin-top: 8%;
+}
+.aside-bio .bio p {
+  font-family: "Montserrat", "sans-serif";
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 32px;
+}
+.aside-bio .bio span a {
+  color: #709b6b;
+  text-decoration: none;
+  font-weight: 700;
+}
+.aside-bio .bio span a:hover, .aside-bio .bio span a:focus {
+  text-decoration: underline;
+}
+
+.aside-recent {
+  background-color: white;
+  margin-top: 5%;
+  padding: 8%;
+}
+.aside-recent h3 {
+  font-family: "Abril Fatface", "cursive";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.aside-recent ul {
+  margin-top: 7%;
+  list-style: inside;
+  font-size: 1rem;
+  font-weight: 400;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-transform: capitalize;
+}
+.aside-recent ul li {
+  letter-spacing: 0;
+  padding: 2% 0 2% 4%;
+}
+.aside-recent ul li::marker {
+  font-size: 0.7rem;
 }

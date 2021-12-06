@@ -156,13 +156,35 @@ nav ul {
 
 .header-banner {
     height: 40vh;
-    background-image: url(./assets/contact-image-1.jpg);
+    background-image: url('./assets/contact-image-1.jpg');
     background-position: center;
     background-size: cover;
     overflow: hidden;
     display: flex;
     align-items: flex-end;
     margin-bottom: 10vh;
+    h1 {
+        color: $white-shade;
+        font-size: 3rem;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: 14px;
+        left: 10%;
+    }
+}
+
+.blog-banner {
+    height: 40vh;
+    background-image: url('./assets/blog-image-1.jpg');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10vh;
+
     h1 {
         color: $white-shade;
         font-size: 3rem;

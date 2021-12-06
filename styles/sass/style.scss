@@ -413,3 +413,78 @@ aside {
 .contact-footer {
     margin-top: 7%;
 }
+
+// BLOG PAGE --------------------------------------------------------------------------------------------------------
+
+.blog-page {
+    background-color: $white-shade;
+}
+
+.aside-bio {
+    background-color: white;
+    margin: 0 auto;
+    padding: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .bio-image {
+        img {
+            width: 100%;
+        }
+        // width: 90%;
+    }
+    .bio {
+        h3 {
+            font-family: $header;
+            text-transform: uppercase;
+            margin-top: 8%;
+        }
+        p {
+            font-family: $body-text;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            line-height: 32px;
+        }
+        span {
+            a {
+                color: $green-gray;
+                text-decoration: none;
+                font-weight: 700;
+                
+                &:hover,
+                &:focus {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+    }
+}
+
+.aside-recent {
+    background-color: white;
+    margin-top: 5%;
+    padding: 8%;
+    h3 {
+        font-family: $header;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        
+    }
+    ul {
+        margin-top: 7%;
+        list-style:inside;
+        font-size: 1rem;
+        font-weight: 400;
+        flex-direction: column;
+        text-transform:capitalize;
+        li {
+            letter-spacing: 0;
+            padding: 2% 0 2% 4%;
+            &::marker {
+                font-size: 0.7rem;
+            }
+        }
+    }
+}
