@@ -544,11 +544,18 @@ article {
 .comment2 {
     border-bottom: 5px solid $green-gray;
 }
-
 .comment-form {
-    width: 85%;
+    button {
+        width: 100%;
+    }
+}
+.comment-form {
+    width: 50%;
     margin: 5% auto;
+    border: 1px solid red;
+
     form {
+        display: flex;
         width: 100%;
     }
 }
