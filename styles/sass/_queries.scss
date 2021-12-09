@@ -202,6 +202,17 @@
             margin: 0 auto;
         }
     }
+    .contactPage {
+        aside {
+            width: 100%;
+        }
+        .aside-box {
+            margin: 10% auto;
+        }
+        .form-box {
+            width: 100%;
+        }
+    }
 }
 
 
@@ -328,6 +339,23 @@
             margin-top: 5%;
         }
     }
+    nav {
+        height: 5vh;
+        .fa-bars {
+            font-size: 1.5rem;
+        }
+    }
+    .header-banner {
+        height: 20vh;
+        h1 {
+            font-size: 2rem;
+            top: 10px;
+        }
+
+    }
+    .contact-email {
+        font-size: 1rem;
+    }    
 }
 
 
@@ -373,6 +401,16 @@
     nav {
         .fa-bars {
             font-size: 1.5rem;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .header-banner {
+        .contact-header {
+
+            font-size: 1.5rem;
+            top: 8px;
         }
     }
 }
