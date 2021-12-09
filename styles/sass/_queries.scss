@@ -205,3 +205,52 @@
         width: 100%;
     }
 }
+
+@media (max-width: 570px) {
+     nav {
+         ul {
+             display: none;
+         }
+
+    .fa-bars {
+        display: block;
+        font-size: 2rem;
+        color: $white-shade;
+        position: relative;
+        left: 5%;
+        }
+     }
+
+     .title h1 {
+         font-size: 3rem;
+         &::before {
+             display: none;
+         }
+     }
+
+     .contact {
+         .contact-box {
+             h2 {
+                 font-size: 1rem;
+             }
+         }
+     }
+     .insta {
+         display: none;
+     }
+     
+    
+}
+
+
+@media (max-width: 486px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        .contact-box {
+            width: 100%;
+        }
+    }
+}
