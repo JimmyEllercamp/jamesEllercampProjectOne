@@ -1257,6 +1257,61 @@ article {
   .blog-article button {
     margin-bottom: 10%;
   }
+
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main h3 {
+    font-size: 2rem;
+  }
+
+  .flex-parent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .flex-parent div {
+    width: 100%;
+    text-align: center;
+  }
+
+  .blog-page .flex-child2 {
+    width: 100%;
+  }
+  .blog-page .aside-recent {
+    margin-bottom: 5%;
+  }
+  .blog-page .aside-recent h3 {
+    text-align: start;
+    font-size: 2.5rem;
+  }
+  .blog-page .aside-recent ul {
+    text-align: start;
+    width: 50%;
+    margin: 10% auto;
+    font-family: "Montserrat", "sans-serif";
+  }
+  .blog-page .article-container {
+    background: #f6f6f6;
+  }
+  .blog-page .article-container article {
+    width: 100%;
+  }
+  .blog-page .article-container article h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .blog-page .article-container article p {
+    font-family: "Montserrat", "sans-serif";
+  }
+  .blog-page .bio-image {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 @media (max-width: 880px) {
   .contact p {
@@ -1312,6 +1367,22 @@ article {
   .blog .blog-article {
     width: 100%;
   }
+
+  .blog-page h2 {
+    font-size: 2rem;
+  }
+  .blog-page h3 {
+    font-size: 1.5rem;
+  }
+  .blog-page .aside-recent h3 {
+    font-size: 1.5rem;
+  }
+  .blog-page .reader-comments {
+    width: 100%;
+  }
+  .blog-page .reader-comments p {
+    line-height: normal;
+  }
 }
 @media (max-width: 570px) {
   nav ul {
@@ -1332,12 +1403,30 @@ article {
     display: none;
   }
 
+  .blog-banner {
+    height: 20vh;
+  }
+  .blog-banner h1 {
+    font-size: 2rem;
+    top: 11px;
+  }
+
   .contact .contact-box h2 {
     font-size: 1rem;
   }
 
   .insta {
     display: none;
+  }
+
+  .aside-recent {
+    display: none;
+  }
+
+  .form-box input[type=text],
+.form-box input[type=email] {
+    width: 100%;
+    margin-top: 5%;
   }
 }
 @media (max-width: 486px) {
@@ -1358,5 +1447,37 @@ article {
   }
   .contact .contact-box {
     width: 100%;
+  }
+  .contact .readerComments {
+    display: none;
+  }
+}
+@media (max-width: 352px) {
+  .blog-page nav {
+    height: 7vh;
+  }
+  .blog-page nav .fa-bars {
+    font-size: 1.5rem;
+  }
+  .blog-page .blog-banner h1 {
+    font-size: 1.25rem;
+    top: 7px;
+  }
+  .blog-page h2,
+.blog-page h3 {
+    font-size: 1rem;
+  }
+
+  .blog-page .article-container article h2 {
+    font-size: 1rem;
+  }
+
+  nav .fa-bars {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 486px) {
+  .readerComments {
+    display: none;
   }
 }

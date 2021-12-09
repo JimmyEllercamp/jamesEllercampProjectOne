@@ -580,3 +580,11 @@ article {
 
 
 @import 'queries';
+
+
+
+@media (max-width: 486px) {
+    .readerComments {
+        display: none;
+    }
+}
