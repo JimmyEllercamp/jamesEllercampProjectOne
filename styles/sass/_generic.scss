@@ -1,0 +1,31 @@
+html {
+    font-size: 125%;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 1rem;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+body {
+    background-color: $white-shade;
+}
+
+aside ul {
+    display: flex;
+
+}
+
+.contactPage {
+    display: flex;
+}
+
+.hidden-gallery {
+    display: none;
+}

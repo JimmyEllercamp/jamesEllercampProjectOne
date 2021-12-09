@@ -467,6 +467,21 @@ nav ul li a {
   left: 10%;
 }
 
+footer {
+  height: 5vh;
+  background: #1f1f1f;
+  color: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 html {
   font-size: 125%;
 }

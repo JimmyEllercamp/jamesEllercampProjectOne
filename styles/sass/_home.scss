@@ -1,0 +1,40 @@
+.home {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: $white-shade;
+    h2 {
+        font-family: $header;
+        font-size: 2rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    p {
+        width: 85%;
+        margin: 0 auto;
+        padding: 2.5% 0;
+        font-family: $body-text;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    button {
+        font-family: $button-text;
+        width: 200px;
+        margin: 0 auto;
+        padding: 5px 0;
+        line-height: 32px;
+        letter-spacing: 1px;
+        background: $accent;
+        transition: transform 0.2s ease-in-out;
+        &:hover,
+        &:focus {
+            transform: scale(1.1);
+        }
+    }
+}
+.tablet-hero-image {
+    display: none;
+}

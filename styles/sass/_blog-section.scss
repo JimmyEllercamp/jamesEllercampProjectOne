@@ -1,0 +1,44 @@
+.blog {
+    height: 55vh;
+    display: flex;
+    align-items: center;
+
+    .blog-image-card {
+        position: relative;
+        width: 23%;
+        margin-right: 10%;
+
+        .blog-image {
+            width: 100%;
+            position: relative;
+            z-index: 10;
+
+            img {
+                width: 100%;
+                position: relative;
+                right: 15px;
+                bottom: 10px;
+            }
+        }
+
+        .blog-card {
+            background: $green-gray;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    .blog-article {
+        width: 60%;
+
+        h2 {
+            font-family: $header;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 1.8rem;
+        }
+    }
+}
