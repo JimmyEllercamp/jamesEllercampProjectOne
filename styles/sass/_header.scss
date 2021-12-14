@@ -57,6 +57,11 @@ nav {
     }
 }
 
+.secret-menu {
+    display: none;
+}
+
+
 ul {
     list-style: none;
     margin: 0;
@@ -198,4 +203,11 @@ nav ul {
         top: 14px;
         left: 10%;
     }
+}
+
+.fa-bars {
+    color: $white-shade;
+}
+.open {
+    color: rgb(228, 164, 54);
 }

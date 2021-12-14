@@ -312,6 +312,10 @@ nav .fa-bars {
   display: none;
 }
 
+.secret-menu {
+  display: none;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -465,6 +469,14 @@ nav ul li a {
   position: relative;
   top: 14px;
   left: 10%;
+}
+
+.fa-bars {
+  color: #f6f6f6;
+}
+
+.open {
+  color: #e4a436;
 }
 
 footer {
@@ -1410,6 +1422,9 @@ article {
   }
 }
 @media (max-width: 570px) {
+  nav {
+    height: 6vh !important;
+  }
   nav ul {
     display: none;
   }
@@ -1419,6 +1434,7 @@ article {
     color: #f6f6f6;
     position: relative;
     left: 5%;
+    top: 10%;
   }
 
   .title h1 {
@@ -1473,6 +1489,21 @@ article {
     font-size: 1rem;
   }
 }
+.secret-menu {
+  display: none;
+  font-size: 1rem;
+  position: absolute;
+  background-color: #345231;
+  border: 1px solid #e4a436;
+  padding: 5%;
+  z-index: 10;
+  left: 5%;
+  top: 7%;
+}
+.secret-menu a {
+  font-weight: 400;
+}
+
 @media (max-width: 486px) {
   .contact {
     display: -webkit-box;

@@ -287,18 +287,24 @@
 
 @media (max-width: 570px) {
      nav {
+         height: 6vh !important;
+        //  padding-bottom: 5%;
          ul {
              display: none;
          }
 
-    .fa-bars {
-        display: block;
-        font-size: 2rem;
-        color: $white-shade;
-        position: relative;
-        left: 5%;
+
+         .fa-bars {
+             display: block;
+             font-size: 2rem;
+             color: $white-shade;
+             position: relative;
+             left: 5%;
+             top: 10%;
+            }
         }
-     }
+        
+
 
      .title h1 {
          font-size: 3rem;
@@ -358,6 +364,21 @@
     }    
 }
 
+.secret-menu {
+    display: none;
+    font-size: 1rem;
+    position: absolute;
+    background-color: $pine;
+    border: 1px solid $accent;
+    padding: 5%;
+    z-index: 10;
+    left: 5%;
+    top: 7%;
+
+    a {
+        font-weight: 400;
+    }
+}
 
 @media (max-width: 486px) {
     .contact {
