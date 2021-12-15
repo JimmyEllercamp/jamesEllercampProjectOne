@@ -973,6 +973,14 @@ aside {
   margin-top: 7%;
 }
 
+.userThank {
+  width: 100%;
+  text-align: center;
+  font-family: cursive;
+  color: #e4a436;
+  font-size: 1.5rem;
+}
+
 .blog-page {
   background-color: #f6f6f6;
 }
